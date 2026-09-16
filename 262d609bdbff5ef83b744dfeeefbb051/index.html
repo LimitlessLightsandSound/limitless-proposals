@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="proposal-renderer" content="2"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"><title>Limitless proposal</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="proposal-renderer" content="3"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"><title>Limitless proposal</title><style>
   :root{
     --espresso:#1b1410;
     --espresso-2:#241b16;
@@ -134,7 +134,8 @@
   footer{border-top:1px solid var(--line-soft);padding:26px 0}
   .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--sand-2)}
 
-  .reveal{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+  .reveal{opacity:1;transform:none;transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+  .motion-ready .reveal:not(.in){opacity:0;transform:translateY(20px)}
   .reveal.in{opacity:1;transform:none}
 
   @media (max-width:800px){
@@ -155,30 +156,69 @@
     .space:hover{transform:none}
   }
 
-/* Content is readable without scripts, including the sandboxed app preview. */
-.reveal{opacity:1;transform:none}h1,h2,h3,p,.hf,.sig{overflow-wrap:anywhere}.hero h1{max-width:17ch}.hero-foot{margin-top:34px}.hero-mid{padding-top:38px}.hero{min-height:96vh}.hero-lede,.sec-intro,.space p,.plate-item p,.promise-col p,.tl-what p,.close p{white-space:pre-line}.sec-intro{margin-bottom:30px}.space+.space{margin-top:0}.section-rule{border-top:1px solid var(--line-soft)}.legacy-copy{white-space:pre-wrap}.inv-note{color:var(--sand);max-width:68ch;margin:24px auto 0}.sig .ct{white-space:pre-line}.headline-accent{color:var(--candle)}.proposal-context{font-size:14px}.hf{max-width:290px}main{position:relative;z-index:2}.hero h1 em{max-width:100%}
+/* Progressive enhancement: scripts opt into motion; no-script content stays visible. */
+h1,h2,h3,p,.hf,.sig{overflow-wrap:anywhere}.hero h1{max-width:17ch}.hero-foot{margin-top:34px}.hero-mid{padding-top:38px}.hero{min-height:96vh}.hero-lede,.sec-intro,.space p,.plate-item p,.promise-col p,.tl-what p,.close p{white-space:pre-line}.sec-intro{margin-bottom:30px}.space+.space{margin-top:0}.section-rule{border-top:1px solid var(--line-soft)}.legacy-copy{white-space:pre-wrap}.inv-note{color:var(--sand);max-width:68ch;margin:24px auto 0}.sig .ct{white-space:pre-line}.headline-accent{color:var(--candle)}.proposal-context{font-size:14px}.hf{max-width:290px}main{position:relative;z-index:2}.hero h1 em{max-width:100%}
 body:has(.minimal){--espresso:#f3efe6;--espresso-2:#e9e3d7;--plum:#e6dfd0;--candle:#856124;--candle-2:#86672d;--champagne:#222a25;--parch:#39443a;--sand:#566153;--sand-2:#657060;--line:#85612440;--line-soft:#85612425}.minimal .glow{opacity:.45}.minimal .space{border-radius:0;background:transparent}.minimal .invest{border-radius:0}.minimal .hero h1{text-shadow:none}
 body:has(.bold){--espresso:#15131f;--espresso-2:#211c31;--plum:#30213d;--candle:#edc681;--candle-2:#e4b467;--rose:#bca8d5;--champagne:#f7f0e6;--parch:#dbd1df;--sand:#b8aac8;--sand-2:#aa99ba}.bold .glow{background:radial-gradient(60vw 50vh at 85% 8%,#9258b533,transparent 65%),radial-gradient(50vw 70vh at 4% 60%,#e8b5591a,transparent 65%)}.bold .hero h1{font-size:clamp(56px,9vw,122px)}
 body:has(.technical){--espresso:#0d151d;--espresso-2:#152330;--plum:#1a2e3c;--candle:#e6c17d;--champagne:#eef2f3;--parch:#cbd8df;--sand:#a3b8c7;--sand-2:#8da6b8;--line:#a4bccb40;--line-soft:#a4bccb22}.technical .space,.technical .invest{border-radius:3px}.technical .glow{background:radial-gradient(70vw 60vh at 90% 0%,#a4bccb24,transparent 65%)}
 @media(max-width:800px){.hero{min-height:auto;padding:32px 0 44px}.hero-mid{padding-top:56px}.hero h1{font-size:clamp(52px,12vw,90px)}.hero-foot{display:grid;grid-template-columns:1fr 1fr;gap:20px}.hf{min-width:0}.hf .v{font-size:14px}.forwhom{max-width:55%}section{padding:48px 0}.space p{max-width:none}.inv-figure{font-size:clamp(48px,13vw,90px)}.close{padding:62px 0}.topbar{gap:14px}}
 @media print{.glow,.grain{display:none}body{background:white;color:#222}.hero{min-height:auto}.space,.invest,.tl-row{break-inside:avoid}.wrap{padding:0 20px}section{padding:24px 0}}
+
+/* Preserve the original three-part hero rhythm and restrained editorial emphasis. */
+.hero{gap:52px;min-height:96svh}
+.hero-mid{padding-top:0}.hero-foot{margin-top:0}
+.hero h1,.sec-title,.close h2{text-wrap:balance;overflow-wrap:normal}
+.hero h1{max-width:14ch}.hero-lede{max-width:48ch}
+.lead-statement{max-width:29ch;text-wrap:pretty}
+.promise-col h3{font-size:27px;letter-spacing:.025em;max-width:25ch;text-wrap:balance}
+.space h3{max-width:25ch;text-wrap:balance}
+.space-tags .hl{max-width:34ch;line-height:1.45}
+.section-rule{border-top:0}.hero-foot .hf{max-width:310px}
+.close h2{max-width:19ch}.close h2 em{font-style:normal;color:var(--candle)}
+@media(max-width:800px){.hero{gap:46px}.hero-mid{padding-top:0}.lead-statement{max-width:100%;font-size:34px}.hero-foot{grid-template-columns:1fr 1fr}.sec-title{font-size:40px}.close h2{font-size:46px}}
+@media(prefers-reduced-motion:reduce){.motion-ready .reveal:not(.in),.reveal{opacity:1;transform:none;transition:none!important}.space{transition:none}}
+@media print{.motion-ready .reveal:not(.in){opacity:1;transform:none}.reveal{transition:none}}
 </style></head><body><p id="status" role="status">Loading proposal…</p><script>const render=function renderBody(p) {
     const esc = (s = '') => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
     const lines = (s = '') => esc(s).replace(/\n/g, '<br>');
     const list = (items = []) => `<ul>${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
-    const heading = (eyebrow, title, intro = '') => `<span class="eyebrow sec-eyebrow">${esc(eyebrow)}</span><h2 class="sec-title">${esc(title)}</h2>${intro ? `<p class="sec-intro">${esc(intro)}</p>` : ''}`;
+    const heading = (eyebrow, title, intro = '') => `<span class="eyebrow sec-eyebrow reveal">${esc(eyebrow)}</span><h2 class="sec-title reveal">${esc(title)}</h2>${intro ? `<p class="sec-intro reveal">${esc(intro)}</p>` : ''}`;
     const buyerHeading = { agency: 'A stronger impression. A lighter lift.', creative: 'The idea, felt in the room.', executive: 'A clear purpose. A considered production.', technical: 'The systems behind the experience.' }[p.buyer];
     const moments = p.moments ?? [], pillars = p.valuePillars ?? [], responsibilities = p.responsibilities ?? [], schedule = p.schedule ?? [], inclusions = p.inclusions ?? [];
     const hero = p.heroHeadline?.trim() || p.title;
-    return `<main class="${esc(p.style)}" data-renderer="2"><div class="glow" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
-<header class="hero"><div class="wrap" style="width:100%"><div class="topbar"><div class="logo">LIMITLESS<small>Lights + Sound</small></div><div class="forwhom">prepared for<b>${esc(p.client)}</b><span class="proposal-context">${esc(p.title)}</span></div></div><div class="hero-mid"><div class="hero-rule"></div><span class="eyebrow">${esc(p.heroEyebrow || 'An event, thoughtfully produced')}</span><h1>${lines(hero)}${p.heroAccent ? `<em>${esc(p.heroAccent)}</em>` : ''}</h1><p class="hero-lede">${esc(p.summary)}</p></div><div class="hero-foot">${[['the venue', p.venue], ['the occasion', p.eventDate], ['the experience', moments.map(m => m.title).slice(0, 3).join(' · ')]].filter(([, v]) => v).map(([k, v]) => `<div class="hf"><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('')}</div></div></header>
+    const accentedEnd = (text, tag) => {
+        const words = text.trim().split(/\s+/), tail = words.splice(-Math.min(2, words.length));
+        return `${esc(words.join(' '))}${words.length ? ' ' : ''}<${tag}>${esc(tail.join(' '))}</${tag}>`;
+    };
+    const amount = esc(p.investment).replace(/(\.\d{2})$/, '<span>$1</span>');
+    const contactParts = p.contact.split(/\s*·\s*/);
+    const contactName = contactParts.length > 1 && !contactParts[0].includes('@') ? contactParts.shift() : 'Limitless Lights + Sound';
+    return `<main class="${esc(p.style)}" data-renderer="3"><div class="glow" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+<header class="hero"><div class="wrap" style="width:100%"><div class="topbar reveal"><div class="logo">LIMITLESS<small>Lights + Sound</small></div><div class="forwhom">prepared for<b>${esc(p.client)}</b><span class="proposal-context">${esc(p.title)}</span></div></div></div><div class="wrap" style="width:100%"><div class="hero-mid"><div class="hero-rule reveal"></div><span class="eyebrow reveal">${esc(p.heroEyebrow || 'An event, thoughtfully produced')}</span><h1 class="reveal">${lines(hero)}${p.heroAccent ? `<em>${esc(p.heroAccent)}</em>` : ''}</h1><p class="hero-lede reveal">${esc(p.summary)}</p></div></div><div class="wrap" style="width:100%"><div class="hero-foot reveal">${[['the venue', p.venue], ['the occasion', p.eventDate], ['the spaces', moments.map(m => m.label).slice(0, 3).join(' · ')]].filter(([, v]) => v).map(([k, v]) => `<div class="hf"><div class="k">${k}</div><div class="v">${esc(v)}</div></div>`).join('')}</div></div></header>
 <div class="wrap">
-${p.valueStatement || pillars.length ? `<section class="section-rule" aria-label="Why partner with Limitless"><span class="eyebrow sec-eyebrow">Why we’re the right partner</span><p class="lead-statement">${esc(p.valueStatement || buyerHeading)}</p><div class="promise-row">${pillars.map(c => `<div class="promise-col"><span class="kk">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div>`).join('')}</div></section>` : ''}
-<section aria-label="The experience">${heading('What your guests will feel', moments.length ? 'Every moment, considered.' : 'The experience', p.experience)}${moments.length ? `<div class="spaces">${moments.map((c, i) => `<article class="space ${['a', 'b', 'c'][i % 3]}"><div class="space-glow" aria-hidden="true"></div><div class="space-inner"><div class="space-label">${esc(c.label)}</div><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p><div class="space-tags">${(c.highlights ?? []).map(x => `<span class="hl"><span class="d" aria-hidden="true">✦</span>${esc(x)}</span>`).join('')}</div></div></article>`).join('')}</div>` : ''}</section>
-${p.delivery || responsibilities.length ? `<section class="section-rule" aria-label="Production ownership">${heading('What we carry for you', 'The work behind the moment.', p.delivery)}<div class="plate-grid">${responsibilities.map(c => `<div class="plate-item"><span class="lead">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div>`).join('')}</div></section>` : ''}
-${schedule.length ? `<section class="section-rule" aria-label="Production timeline">${heading('How it comes together', 'A plan from build to close.')}<div class="timeline">${schedule.map(c => `<div class="tl-row"><div class="tl-when"><div class="date">${esc(c.when)}</div></div><div class="tl-what"><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div></div>`).join('')}</div></section>` : ''}
-<section class="section-rule" aria-label="Production scope">${heading('What’s included', 'The production, brought together.', p.scope)}${inclusions.length ? `<div class="incl">${inclusions.map(c => `<div class="incl-card"><h3 class="h">${esc(c.title)}</h3>${list(c.items)}</div>`).join('')}</div>` : ''}</section>
-<section aria-label="Investment"><div class="invest"><div class="inv-in"><div class="inv-label">your investment</div><div class="inv-figure">${esc(p.investment)}</div><p class="inv-desc">${inclusions.length ? 'The production described above, presented as one working proposal.' : 'The scope and production support described in this proposal.'}</p><p class="inv-note">${esc(p.terms)}</p></div></div></section>
-<section class="close"><h2>${esc(p.closeHeadline || 'Let’s shape the next step.')}</h2><p>${esc(p.nextSteps)}</p><div class="sig"><span class="nm">Limitless Lights + Sound</span><span class="rl">your production partner</span><span class="ct">${esc(p.contact)}</span></div></section>
+${p.valueStatement || pillars.length ? `<section class="section-rule" aria-label="Why partner with Limitless"><span class="eyebrow sec-eyebrow reveal">Why we’re the right partner</span><p class="lead-statement reveal">${accentedEnd(p.valueStatement || buyerHeading, 'b')}</p><div class="promise-row">${pillars.map(c => `<div class="promise-col reveal"><span class="kk">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div>`).join('')}</div></section>` : ''}
+<section aria-label="The experience">${heading('What your guests will feel', moments.length ? 'Every moment, considered.' : 'The experience', p.experience)}${moments.length ? `<div class="spaces">${moments.map((c, i) => `<article class="space reveal ${['a', 'b', 'c'][i % 3]}"><div class="space-glow" aria-hidden="true"></div><div class="space-inner"><div class="space-label">${esc(c.label)}</div><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p><div class="space-tags">${(c.highlights ?? []).map(x => `<span class="hl"><span class="d" aria-hidden="true">✦</span>${esc(x)}</span>`).join('')}</div></div></article>`).join('')}</div>` : ''}</section>
+${p.delivery || responsibilities.length ? `<section class="section-rule" aria-label="Production ownership">${heading('What we carry for you', 'The work behind the moment.', p.delivery)}<div class="plate-grid">${responsibilities.map(c => `<div class="plate-item reveal"><span class="lead">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div>`).join('')}</div></section>` : ''}
+${schedule.length ? `<section class="section-rule" aria-label="Production timeline">${heading('How it comes together', 'A plan from build to close.')}<div class="timeline">${schedule.map(c => `<div class="tl-row reveal"><div class="tl-when"><div class="date">${esc(c.when)}</div></div><div class="tl-what"><h3>${esc(c.title)}</h3><p>${esc(c.body)}</p></div></div>`).join('')}</div></section>` : ''}
+<section class="section-rule" aria-label="Production scope">${heading('What’s included', 'The production, brought together.', p.scope)}${inclusions.length ? `<div class="incl">${inclusions.map(c => `<div class="incl-card reveal"><h3 class="h">${esc(c.title)}</h3>${list(c.items)}</div>`).join('')}</div>` : ''}</section>
+<section aria-label="Investment"><div class="invest reveal"><div class="inv-in"><div class="inv-label">your investment</div><div class="inv-figure">${amount}</div><p class="inv-desc">${inclusions.length ? 'The production described above, presented as one working proposal.' : 'The scope and production support described in this proposal.'}</p><p class="inv-note">${esc(p.terms)}</p></div></div></section>
+<section class="close"><h2 class="reveal">${accentedEnd(p.closeHeadline || 'Let’s shape the next step.', 'em')}</h2><p class="reveal">${esc(p.nextSteps)}</p><div class="sig reveal"><span class="nm">${esc(contactName)}</span><span class="rl">your partner at Limitless</span><span class="ct">${esc(contactParts.join(' · '))}</span></div></section>
 <footer><div class="foot-in"><span>Limitless Lights + Sound</span><span>prepared for ${esc(p.client)}</span><span>Austin · Houston · Dallas</span></div></footer></div></main>`;
-};fetch('./proposal.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{document.title=data.content.title+' | Limitless';document.body.innerHTML=render(data.content)}).catch(()=>{document.getElementById('status').textContent='This proposal is temporarily unavailable. Please try again.'});</script></body></html>
+};const motion=()=>{(() => {
+  if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') return
+  const root = document.documentElement
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
+  if (reduced.matches) return
+  let observer
+  const showAll = () => { root.classList.remove('motion-ready'); observer?.disconnect() }
+  try {
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target) } })
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' })
+    const targets = document.querySelectorAll('.reveal')
+    targets.forEach((el, i) => { el.style.transitionDelay = `${Math.min(i % 4, 3) * 65}ms`; observer.observe(el) })
+    root.classList.add('motion-ready')
+    reduced.addEventListener('change', event => { if (event.matches) showAll() })
+    window.addEventListener('beforeprint', showAll)
+  } catch { showAll() }
+})();};fetch('./proposal.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{document.title=data.content.title+' | Limitless';document.body.innerHTML=render(data.content);motion()}).catch(()=>{document.getElementById('status').textContent='This proposal is temporarily unavailable. Please try again.'});</script></body></html>
